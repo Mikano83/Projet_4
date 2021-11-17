@@ -3,6 +3,9 @@
 *{
     scroll-behavior: smooth;
 }
+a:link{
+    text-decoration: none;
+}
 /* ############## FONTS ############## */
 .roboto{
     font-family: 'Roboto Slab', serif;
