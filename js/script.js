@@ -1,5 +1,3 @@
-const projectID = document.getElementById("project");
-
 $(document).ready(function () {
   $('.slider').slider({
     interval: 4500,
@@ -11,9 +9,9 @@ $(document).ready(function () {
   $('.parallax').parallax();
 });
 function t() {
-  if(projectID.style.display !== "none"){
-    projectID.style.display = "none";
+  if($("#project").is(':visible')){
+    $("#project").css('display','none');
   } else {
-    projectID.style.display = "block";
+    $("#project").css('display','block');
   }
 }
