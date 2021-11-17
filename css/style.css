@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@700&family=Montserrat&family=Roboto+Slab&display=swap');
+/* ################ COMMON ################ */
+*{
+    scroll-behavior: smooth;
+}
+/* ############## FONTS ############## */
+.roboto{
+    font-family: 'Roboto Slab', serif;
+}
+.miriam{
+    font-family: "Miriam Libre", sans-serif;
+}
+.montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+/* ############## FONTS ############## */
+h1{
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin: 0;
+}
+.round-border{   
+  border-radius: 3rem;
+}
+.round-image{
+    border-radius: 1rem;
+}
+.remove-margin{
+    margin: 0;
+}
+.sticky{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.transparent-black{
+    background-color: #000000a9;
+}
+.transparent-white{
+    background-color: #ffffffa9;
+}
+.anthracite{
+    background-color: #303030;
+}
+.anthracite-text{
+    color: #303030;
+}
+/* ################ COMMON ################ */
+/* ################ HEADER ################ */
+.game-name {
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+.game-description {
+  font-size: medium;
+  letter-spacing: -1px;
+}
+/* ################ HEADER ################ */
+/* ################ NAVBAR ################ */
+.navbar .navbar-header{
+    border-bottom-style: solid;
+    border-color: #e5e5e5;
+    background-color: #ebebeb;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.navbar h2{
+    margin: 0;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+.navbar.sidenav a.underline{
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: #e5e5e5;
+}
+.navbar .btn-contact{
+    position: absolute;
+    bottom: 10px;
+    right: 24px;
+    margin-bottom: 10vh;
+}
+/* ################ NAVBAR ################ */
+/* ################# MAIN ################# */
+.container-padding{
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+/* ############# QUESACO ############# */
+.quesaco-padding{
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+.quesaco-header{
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    border-bottom-style: solid;
+    border-color: #e5e5e5;
+    background-color: #ebebeb;
+    max-height: 35vh;
+}
+.quesaco-header img{
+    width: 10vh;
+    border-radius: 3rem;
+    margin-top: 5vh;
+    margin-bottom: 0;
+}
+.quesaco-header h2{
+    font-size: 7vh;
+    margin: 0;
+    line-height: 8vh;
+    font-size: 5vh;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+.quesaco .qst{
+    background-color: #e8e7ec;
+    color: #343434;
+    border-radius: 3rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 1rem;
+    min-height: 7vh;
+    justify-content: center;
+    margin: 0.5vh;
+    padding: 2vh;
+}
+.quesaco .rep{
+    background-color: #1689fc;
+    border-radius: 3rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 1rem;
+    min-height: 7vh;
+    margin: 0.5vh;
+    padding: 2vh;
+}
+.quesaco .btn-floating:hover{
+    background-color: #d1d1d1a9;
+}
+/* ############# QUESACO ############# */
+/* ############# PROJETS ############# */
+.container-project{
+    display: none;
+    padding-top: 3vh;
+}
+.projects p{
+    padding: 0;
+}
+.projects .row:hover p{
+    display: block;
+    white-space: normal;
+    overflow: auto;
+    text-overflow: auto;
+}
+.projects img{
+    height: 90%;
+    width: 90%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-right: 0;
+    padding-right: 0;
+}
+.projects .row .text-title{
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+.projects .row .left-text{
+    padding-left: 4vw;
+    padding-right: 2vw;
+}
+.projects .row .right-text{
+    padding-left: 2vw;
+    padding-right: 4vw;
+}
+.projects .left-project{   
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    margin-left: 10%
+}
+.projects .right-project{   
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    margin-right: 10%;
+}
+.projects .left-border{
+    border-left-style: solid;
+    border-color: grey;
+}
+.projects .right-border{
+    border-right-style: solid;
+    border-color: grey;
+}
+/* ############# PROJETS ############# */
+/* ################# MAIN ################# */
