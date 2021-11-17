@@ -6,9 +6,8 @@ html{
 
 body {
   font: 100% Roboto, sans-serif;
-  background: url(https://cdn.wallpapersafari.com/61/38/0fMsW2.jpg) 50% 50% repeat;
+  background: url(../img/project_template/background.jpg) 50% 50% repeat;
   background-size: cover;
-  padding: 50px;
   margin: 0;
   justify-content:center;
   align-items:center;
