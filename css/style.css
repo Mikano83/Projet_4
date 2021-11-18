@@ -242,7 +242,14 @@ h1 {
 
 /* ############# PROJETS ############# */
 /* ################# MAIN ################# */
-
+.rick{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
 @keyframes rotation_loop {
     from {
         transform: rotate(0deg);
@@ -250,5 +257,27 @@ h1 {
 
     to {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes rick_loop {
+    0% {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    25% {
+        background-color: rgba(255, 0, 0, 0.3);
+    }
+
+    50% {
+        background-color: rgba(0, 255, 0, 0.3);
+    }
+
+    75% {
+        background-color: rgba(0, 0, 255, 0.3);
+    }
+
+    100% {
+        background-color: rgba(255, 0, 255, 0.3);
     }
 }
