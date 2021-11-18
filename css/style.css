@@ -5,8 +5,23 @@
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 3rem;
+    -webkit-box-shadow: inset 0 0 6px #ffffff50;
+    background-color: #1689fc56;
+}
+
 body {
     transition: transform 1s;
+}
+
+a {
+    color: white;
+    text-decoration: none !important;
 }
 
 /* ############## FONTS ############## */
@@ -29,11 +44,11 @@ h1 {
     margin: 0;
 }
 
-.round-border {
+.rounded-corner-border {
     border-radius: 3rem;
 }
 
-.round-image {
+.rounded-corner-image {
     border-radius: 1rem;
 }
 
@@ -48,19 +63,19 @@ h1 {
 }
 
 .transparent-black {
-    background-color: #000000a9;
+    background-color: #000000a9 !important;
 }
 
 .transparent-white {
-    background-color: #ffffffa9;
+    background-color: #ffffffa9 !important;
 }
 
 .anthracite {
-    background-color: #303030;
+    background-color: #303030 !important;
 }
 
 .anthracite-text {
-    color: #303030;
+    color: #303030 !important;
 }
 
 /* ################ COMMON ################ */
@@ -132,7 +147,6 @@ h1 {
 
 .quesaco-header img {
     width: 10vh;
-    border-radius: 3rem;
     margin-top: 5vh;
     margin-bottom: 0;
 }
@@ -141,7 +155,7 @@ h1 {
     font-size: 7vh;
     margin: 0;
     line-height: 8vh;
-    font-size: 5vh;
+    font-size: 3rem;
     font-weight: bold;
     letter-spacing: -2px;
 }
@@ -241,15 +255,203 @@ h1 {
 }
 
 /* ############# PROJETS ############# */
-/* ################# MAIN ################# */
-.rick{
-    width: 100%;
-    height: 100%;
+/* ############## MODAL ############## */
+.modal {
+    background-color: #000000cc !important;
+    overflow: hidden !important;
+    max-height: 74% !important;
+}
+
+.modal-content .card {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.modal-content .card:before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background: #6b409150;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
 }
+
+.modal-content .card:hover:before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+.modal-content .card:after {
+    content: 'Tech';
+    position: absolute;
+    top: 50%;
+    left: 0%;   
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: #6b409117
+}
+
+.modal-content .card .imgBx {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+}
+
+.modal-content .card:hover .imgBx {
+    top: 0%;
+    transform: translateY(0%);
+
+}
+
+.modal-content .card .imgBx img {
+    width: 50%;
+    border-style: solid;
+    border-color: #ffffffa9;
+}
+
+.modal-content .card .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.modal-content .card:hover .contentBx {
+    height: 210px;
+}
+
+.modal-content .card .contentBx h2 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.modal-content .card .contentBx .age, .modal-content .card .contentBx .desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.modal-content .card:hover .contentBx .age {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.modal-content .card:hover .contentBx .desc {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+}
+
+.modal-content .card .contentBx .age h3, .modal-content .card .contentBx .desc h3 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.modal-content .card .contentBx .age span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-content .card:hover .contentBx a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+
+}
+
+.modal-content .linkedin {
+    width: 100%;
+}
+
+.modal-footer {
+    background-color: #ffffff80 !important;
+    height: auto !important;
+}
+
+.modal-footer label {
+    color: #000000cc;
+}
+
+.modal-footer .btn{
+    background-color: #6b409150;
+}
+
+.modal-footer textarea.materialize-textarea {
+    overflow-y: scroll !important;
+    height: 1px !important;
+}
+
+.modal-footer textarea::-webkit-scrollbar {
+    width: 12px;
+    height: 10px;
+}
+
+.modal-footer textarea::-webkit-scrollbar-thumb {
+    border-radius: 3rem;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #6b409150;
+}
+
+/* ############## MODAL ############## */
+/* ################# MAIN ################# */
+.rick {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+}
+
+.antoine {
+    display: none;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 35%;
+    box-shadow: 0px 0px 50px 20px #fff;
+}
+
 @keyframes rotation_loop {
     from {
         transform: rotate(0deg);
@@ -279,5 +481,15 @@ h1 {
 
     100% {
         background-color: rgba(255, 0, 255, 0.3);
+    }
+}
+
+@keyframes heaven {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(2);
     }
 }
