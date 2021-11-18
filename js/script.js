@@ -7,6 +7,7 @@ $(document).ready(function () {
   $('.sidenav').sidenav();
   $('.modal').modal();
   $('.parallax').parallax();
+  $('.dropdown-trigger').dropdown();
 });
 
 var count_btn_click = 0;
