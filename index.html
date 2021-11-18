@@ -13,130 +13,189 @@
 </head>
 
 <body class="anthracite">
-  <div class="rick"></div>
-  <div class="main">
-    <header>
-      <div class="slider">
-        <ul class="slides">
-          <li>
-            <img class="" src="img/home_template/slider1.png">
-            <div class="caption center-align">
-              <h2 class="game-name montserrat">Projet 1</h2>
-              <h5 class="light grey-text text-lighten-3 game-description miriam">Petit descriptif projet 1.</h5>
-            </div>
-          </li>
-          <li>
-            <img src="img/home_template/slider2.jpg">
-            <div class="caption left-align">
-              <h2 class="game-name montserrat">Projet 2</h2>
-              <h5 class="light grey-text text-lighten-3 game-description miriam">Petit descriptif projet 2.</h5>
-            </div>
-          </li>
-          <li>
-            <img src="img/home_template/slider3.jpg">
-            <div class="caption right-align">
-              <h2 class="game-name montserrat">Projet 3</h2>
-              <h5 class="light grey-text text-lighten-3 game-description miriam">Petit descriptif projet 3.</h5>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <!-- ################ Responsive NavBar ################ -->
-    <nav class="navbar sticky transparent-black">
-      <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">
-          <h1 class="roboto">Projet 4</h1>
-        </a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#projet1">Projet 1</a></li>
-          <li><a href="#projet2">Projet 2</a></li>
-          <li><a href="#projet3">Projet 3</a></li>
-          <li><a class="modal-trigger" href="#modal1">Nous Contacter</a></li>
-        </ul>
-      </div>
-    </nav>
-    <ul class="navbar sidenav" id="mobile-demo">
-      <div class="container navbar-header">
-        <h2 class="center">Portfolio</h2>
-      </div>
-      <li><a class="underline" href="#projet1">Projet 1</a></li>
-      <li><a class="underline" href="#projet2">Projet 2</a></li>
-      <li><a class="underline" href="#projet3">Projet 3</a></li>
-      <div class="btn-contact right-align">
-        <a class="btn-floating btn-large anthracite pulse modal-trigger" href="#modal1"><i
-            class="material-icons">contact_page</i></a>
-      </div>
-    </ul>
-    <!-- ################ Responsive NavBar ################ -->
-
-    <!-- ################ Main ################ -->
-    <div id="modal1" class="modal">
-      <div class="modal-content">
-        <h4>Modal Header</h4>
-        <p>A bunch of text</p>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-      </div>
+  <div class="rick">
+    <img class="antoine responsive-img circle" src="img/home_template/contact.jpg" alt="">
+  </div>
+  <header id="header">
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img class="" src="img/home_template/slider1.png">
+          <div class="caption center-align">
+            <h2 class="game-name montserrat">Projet 1</h2>
+            <h5 class="light grey-text text-lighten-3 game-description miriam">Petit descriptif projet 1.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/home_template/slider2.jpg">
+          <div class="caption left-align">
+            <h2 class="game-name montserrat">Projet 2</h2>
+            <h5 class="light grey-text text-lighten-3 game-description miriam">Petit descriptif projet 2.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/home_template/slider3.jpg">
+          <div class="caption right-align">
+            <h2 class="game-name montserrat">Projet 3</h2>
+            <h5 class="light grey-text text-lighten-3 game-description miriam">Petit descriptif projet 3.</h5>
+          </div>
+        </li>
+      </ul>
     </div>
-    <div class="container white white-text round-border">
+  </header>
+  <!-- ################ Responsive NavBar ################ -->
+  <nav class="navbar sticky transparent-black">
+    <div class="nav-wrapper">
+      <a href="#header" class="brand-logo">
+        <h1 class="roboto">Portfolio</h1>
+      </a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#projet1">Projet 1</a></li>
+        <li><a href="#projet2">Projet 2</a></li>
+        <li><a href="#projet3">Projet 3</a></li>
+        <li><a class="modal-trigger" href="#modal1">Nous Contacter</a></li>
+      </ul>
+    </div>
+  </nav>
+  <ul class="navbar sidenav" id="mobile-demo">
+    <div class="container navbar-header">
+      <h2 class="center">Portfolio</h2>
+    </div>
+    <li><a class="underline" href="#projet1">Projet 1</a></li>
+    <li><a class="underline" href="#projet2">Projet 2</a></li>
+    <li><a class="underline" href="#projet3">Projet 3</a></li>
+    <div class="btn-contact right-align">
+      <a class="btn-floating btn-large anthracite pulse modal-trigger" href="#modal1"><i
+          class="material-icons">contact_page</i></a>
+    </div>
+  </ul>
+  <!-- ################ Responsive NavBar ################ -->
 
-      <!-- ################ Quesaco ################ -->
-      <div class="quesaco">
-        <div class="quesaco-header center-align">
-          <img class="" src="img/home_template/contact.jpg" alt="">
-          <h2 class=" anthracite-text">A. DI ROBERTO</h2>
+  <!-- ################ Main ################ -->
+  <div id="modal1" class="modal transparent-black rounded-corner-border">
+    <div class="modal-content row center-block">
+      <div class="card col s5">
+        <div class="imgBx center-align">
+          <img class="circle" src="img/theo.jpg">
         </div>
-        <div class="quesaco-padding">
-          <div class="row remove-margin">
-            <h5 class="qst flow-text col s9 offset-s3 m7 offset-m5 l7 offset-l5 xl4 offset-xl8 valign-wrapper">
-              Mais c'est vrai ça, quésaco ?
-            </h5>
+        <div class="contentBx">
+          <h2 class="flow-text">DA SILVA Théo</h2>
+          <div class="age valign-wrapper">
+            <h3>21ans</h3>
           </div>
-          <div class="row remove-margin">
-            <p class="rep flow-text col s10 m8 l7 valign-wrapper">
-              En bref, c'est un projet qui nous a été demandé, le quatrième de notre année pour être précis. Une sorte
-              de
-              portfolio commun.
-            </p>
+          <div class="desc">
+            <h3>1ère Année Programmation informatique spécialisé dans le jeu vidéo</h3>
           </div>
-          <div class="row remove-margin">
-            <h5 class="qst flow-text col s7 offset-s5 m7 offset-m5 l6 offset-l6 xl4 offset-xl8 valign-wrapper">
-              Et c'est quoi un portfolio ?
-            </h5>
-          </div>
-          <div class="row remove-margin">
-            <p class="rep flow-text col s10 m8 l7 valign-wrapper">
-              C'est l'endroit où l'on expose nos projets, qu'ils soient personnels ou faits en groupe !
-            </p>
-          </div>
-          <div class="row remove-margin">
-            <p class="rep flow-text col s9 m5 l4 valign-wrapper">
-              Tiens, en voilà quelques-uns
-            </p>
-          </div>
-          <div class="row">
-            <p class="rep-btn rep flow-text col valign-wrapper">
-              <a href="#project" class="btn-floating transparent-white pulse ">
-                <i class="material-icons" onclick="modal_contact()">
-                  attachment
-                </i>
-              </a>
-            </p>
-          </div>
+          <a class="btn-floating transparent" href="https://www.linkedin.com/in/th%C3%A9o-da-silva-a68314196/"
+            target="_blank" rel="nofollow"><img class="linkedin" src="img/linkedin.png" alt=""></a>
         </div>
       </div>
-      <!-- ################ Quesaco ################ -->
+      <div class="card col s5 offset-s2">
+        <div class="imgBx center-align">
+          <img class="circle" src="img/theo.jpg">
+        </div>
+        <div class="contentBx">
+          <h2 class="flow-text">MELLANO Kim</h2>
+          <div class="age valign-wrapper">
+            <h3>18ans</h3>
+          </div>
+          <div class="desc">
+            <h3>1ère Année Programmation informatique spécialisé dans le jeu vidéo</h3>
+          </div>
+          <a class="btn-floating transparent" href="https://www.linkedin.com/in/kim-mellano-8a9196223/" target="_blank"
+            rel="nofollow"><img class="linkedin" src="img/linkedin.png" alt=""></a>
+        </div>
+      </div>
     </div>
-    <div id="project" class="container container-project white white-text round-border">
-      <!-- ################ Projets ################ -->
-      <div class="projects container-padding">
-        <!-- ################ Projet 1 ################ -->
+    <div class="modal-footer transparent-white row">
+      <div class="row">
+        <form class="col s12">
+          <div class="row valign-wrapper">
+            <div class="col s10">
+              <div class="input-field col s5">
+                <input id="name" type="text">
+                <label for="name">Name</label>
+              </div>
+              <div class="input-field col s7">
+                <input id="email" type="email" class="form-input">
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field col s12">
+                <textarea id="message" class="materialize-textarea"></textarea>
+                <label for="message">Message</label>
+              </div>
+            </div>
+            <div class="col s2">
+              <p class="right-align"><button class="btn btn-large" type="button" name="action"><i
+                    class="material-icons">send</i></button></p>
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+      </form>
+    </div>
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+  </div>
+  <div class="container white white-text rounded-corner-border">
+
+    <!-- ################ Quesaco ################ -->
+    <div class="quesaco">
+      <div class="quesaco-header center-align">
+        <img class="circle" src="img/home_template/contact.jpg" alt="">
+        <h2 class=" anthracite-text">A. DI ROBERTO</h2>
+      </div>
+      <div class="quesaco-padding">
+        <div class="row remove-margin">
+          <h5 class="qst flow-text col s9 offset-s3 m7 offset-m5 l7 offset-l5 xl4 offset-xl8 valign-wrapper">
+            Mais c'est vrai ça, quésaco ?
+          </h5>
+        </div>
+        <div class="row remove-margin">
+          <p class="rep flow-text col s10 m8 l7 valign-wrapper">
+            En bref, c'est un projet qui nous a été demandé, le quatrième de notre année pour être précis. Une sorte
+            de
+            portfolio commun.
+          </p>
+        </div>
+        <div class="row remove-margin">
+          <h5 class="qst flow-text col s7 offset-s5 m7 offset-m5 l6 offset-l6 xl4 offset-xl8 valign-wrapper">
+            Et c'est quoi un portfolio ?
+          </h5>
+        </div>
+        <div class="row remove-margin">
+          <p class="rep flow-text col s10 m8 l7 valign-wrapper">
+            C'est l'endroit où l'on expose nos projets, qu'ils soient personnels ou faits en groupe !
+          </p>
+        </div>
+        <div class="row remove-margin">
+          <p class="rep flow-text col s9 m5 l4 valign-wrapper">
+            Tiens, en voilà quelques-uns
+          </p>
+        </div>
+        <div class="row">
+          <p class="rep-btn rep flow-text col valign-wrapper">
+            <a href="#project" class="btn-floating transparent-white pulse ">
+              <i class="material-icons" onclick="projects()">
+                attachment
+              </i>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- ################ Quesaco ################ -->
+  </div>
+  <div id="project" class="container container-project white white-text rounded-corner-border">
+    <!-- ################ Projets ################ -->
+    <div class="projects container-padding">
+      <!-- ################ Projet 1 ################ -->
+      <a href="project_template.html">
         <div id="projet1" class="row transparent-black right-project valign-wrapper">
           <div class="col s5 m5 l8">
-            <img class="round-image valign-wrapper" src="img/home_template/base_parallax.jpg" alt="">
+            <img class="rounded-corner-image valign-wrapper" src="img/home_template/slider1.png" alt="">
           </div>
           <div class="col s7 m7 l4 left-border">
             <h5 class="right-align text-title">
@@ -149,30 +208,32 @@
             </p>
           </div>
         </div>
-        <!-- ################ Projet 1 ################ -->
-        <!-- ################ Projet 2 ################ -->
-        <a href="project_template.html">
-          <div id="projet2" class="row transparent-black left-project valign-wrapper">
-            <div class="col s7 m7 l4 right-border">
-              <h5 class="left-align text-title">
-                Projet 2
-              </h5>
-              <p class="left-text valign-wrapper truncate">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quaerat deleniti officiis voluptate
-                eaque reiciendis numquam aliquam saepe culpa amet corporis dignissimos recusandae ipsa, beatae a ut odit
-                tempore laboriosam.
-              </p>
-            </div>
-            <div class="col s5 m5 l8 right-align">
-              <img class="round-image valign-wrapper" src="img/home_template/slider2.jpg" alt="">
-            </div>
+      </a>
+      <!-- ################ Projet 1 ################ -->
+      <!-- ################ Projet 2 ################ -->
+      <a href="project_template.html">
+        <div id="projet2" class="row transparent-black left-project valign-wrapper">
+          <div class="col s7 m7 l4 right-border">
+            <h5 class="left-align text-title">
+              Projet 2
+            </h5>
+            <p class="left-text valign-wrapper truncate">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quaerat deleniti officiis voluptate
+              eaque reiciendis numquam aliquam saepe culpa amet corporis dignissimos recusandae ipsa, beatae a ut odit
+              tempore laboriosam.
+            </p>
           </div>
-        </a>
-        <!-- ################ Projet 2 ################ -->
-        <!-- ################ Projet 3 ################ -->
+          <div class="col s5 m5 l8 right-align">
+            <img class="rounded-corner-image valign-wrapper" src="img/home_template/slider2.jpg" alt="">
+          </div>
+        </div>
+      </a>
+      <!-- ################ Projet 2 ################ -->
+      <!-- ################ Projet 3 ################ -->
+      <a href="project_template.html">
         <div id="projet3" class="row transparent-black right-project valign-wrapper">
           <div class="col s5 m5 l8">
-            <img class="round-image valign-wrapper" src="img/home_template/slider3.jpg" alt="">
+            <img class="rounded-corner-image valign-wrapper" src="img/home_template/slider3.jpg" alt="">
           </div>
           <div class="col s7 m7 l4 left-border">
             <h5 class="right-align text-title">
@@ -185,10 +246,11 @@
             </p>
           </div>
         </div>
-        <!-- ################ Projet 3 ################ -->
-      </div>
-      <!-- ################ Projets ################ -->
+      </a>
+      <!-- ################ Projet 3 ################ -->
     </div>
+    <!-- ################ Projets ################ -->
+  </div>
   </div>
   <!-- ################ Main ################ -->
 
