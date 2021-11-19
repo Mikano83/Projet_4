@@ -1,4 +1,10 @@
+var upsidedown = 0;
+
 $(document).ready(function () {
+  // $(".qst").throwable({
+  //   gravity: {x:0,y:1},
+  //   shape:"circle",
+  // });
   $('.slider').slider({
     interval: 4500,
     indicators: false,
@@ -8,11 +14,22 @@ $(document).ready(function () {
   $('.modal').modal();
   $('.parallax').parallax();
   $('.dropdown-trigger').dropdown();
+  $('#expand_contact').on('click',function () {
+    $('#custom-modal-footer').slideToggle('slow');
+    if (upsidedown == 0){
+    $("#expand_contact_btn").css('transform', 'rotate3d(1, 0, 0, 180deg)');
+    upsidedown = 1;
+    } else {
+      $("#expand_contact_btn").css('transform', 'rotate3d(1, 0, 0, 0deg)');
+      upsidedown = 0;
+    }
+  });
 });
+
 var passphrase = "";
+
 document.addEventListener("keydown", function (event) {
   passphrase = passphrase + event.key;
-  console.log(passphrase);
   password();
 })
 
@@ -29,14 +46,6 @@ function projects() {
     $("#project").css('display', 'block');
   }
   rick();
-}
-function expand_contact() {
-  if ($("#custom-modal-footer").css('display') == 'block') {
-    $("#custom-modal-footer").css('display', 'none');
-  }
-  else {
-    $("#custom-modal-footer").css('display', 'block');
-  }
 }
 /*################# EASTER EGG #################*/
 function rick() {

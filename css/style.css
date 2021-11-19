@@ -262,7 +262,7 @@ h1 {
 .modal {
     background-color: #303030  !important;
     overflow: hidden !important;
-    max-height: 74% !important;
+    max-height: 76% !important;
     box-shadow: inset 0px 0px 50px -10px #1689fc56, 0px 0px 25px 0px #1689fc56!important;
     border-style: solid;
     border-width: 1px;
@@ -270,7 +270,7 @@ h1 {
 }
 
 .modal-overlay{
-    opacity: 0.8!important;
+    opacity: 0.9!important;
 }
 
 .modal-content{
@@ -306,9 +306,9 @@ h1 {
 .modal-content .card:after {
     content: 'Tech';
     position: absolute;
-    top: 50%;
-    left: 0;   
-    font-size: 12em;
+    bottom: 0;
+    margin: 0 auto; 
+    font-size: 10vw;
     font-weight: 800;
     font-style: italic;
     color: #1689fc56
@@ -417,19 +417,33 @@ h1 {
     width: 100%;
 }
 
+#expand_contact_btn{
+    transition: transform 0.5s;
+}
+
 #custom-modal-footer {
-    background-color: #ffffff80 !important;
+    background-color: #4141418c !important;
     height: 30vh;
     display: none;
     box-shadow: inset 0px 5px 10px 1px #303030;
 }
 
 .modal-footer label {
-    color: #000000cc;
+    color: #ffffffcc;
+}
+
+.modal-footer .input-field{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #303030;
+    background-color: #1689fc56;
+    border-radius: 1rem;
+    box-shadow: inset 0px 0px 50px -25px #303030;
 }
 
 .modal-footer .btn{
     background-color: #1689fc56;
+    box-shadow: inset 0px 0px 50px -25px #303030;
 }
 
 .modal-footer textarea.materialize-textarea {
@@ -469,6 +483,18 @@ h1 {
     top: 35%;
     box-shadow: 0px 0px 50px 20px #fff;
 }
+
+@keyframes xrotate {
+    from {
+        transform: rotateX('0');
+    }
+
+    to {
+        transform: rotateX('90');
+    }
+}
+
+/* EASTER EGG */
 
 @keyframes rotation_loop {
     from {
