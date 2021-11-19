@@ -73,7 +73,7 @@
   <!-- ################ Responsive NavBar ################ -->
 
   <!-- ################ Main ################ -->
-  <div id="modal1" class="modal transparent-black rounded-corner-border">
+  <div id="modal1" class="modal rounded-corner-border">
     <div class="modal-content row center-block">
       <div class="card col s5">
         <div class="imgBx center-align">
@@ -108,7 +108,14 @@
         </div>
       </div>
     </div>
-    <div class="modal-footer transparent-white row">
+    <div class="row">
+      <div class="s12 center-align">
+        <a class="expand-btn btn-floating transparent" onclick="expand_contact()">
+          <i class="material-icons white-text">expand_more</i>
+        </a>
+      </div>
+    </div>
+    <div id="custom-modal-footer" class="modal-footer transparent-white row">
       <div class="row">
         <form class="col s12">
           <div class="row valign-wrapper">
@@ -133,11 +140,7 @@
           </div>
         </form>
       </div>
-
-
-      </form>
     </div>
-    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
   </div>
   <div class="container white white-text rounded-corner-border">
 

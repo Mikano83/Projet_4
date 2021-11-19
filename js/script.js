@@ -10,7 +10,7 @@ $(document).ready(function () {
   $('.dropdown-trigger').dropdown();
 });
 var passphrase = "";
-document.addEventListener("keydown", function(event) {
+document.addEventListener("keydown", function (event) {
   passphrase = passphrase + event.key;
   console.log(passphrase);
   password();
@@ -30,6 +30,15 @@ function projects() {
   }
   rick();
 }
+function expand_contact() {
+  if ($("#custom-modal-footer").css('display') == 'block') {
+    $("#custom-modal-footer").css('display', 'none');
+  }
+  else {
+    $("#custom-modal-footer").css('display', 'block');
+  }
+}
+/*################# EASTER EGG #################*/
 function rick() {
   if (count_btn_click == 5) {
     $("body").css('animation', '3s rotation_loop linear infinite');
@@ -39,7 +48,7 @@ function rick() {
   }
 }
 function password() {
-  if (passphrase == "antoine"){
+  if (passphrase == "antoine") {
     $(".rick").css('display', 'block');
     $(".rick").css('background-color', '#000000a9');
     $(".antoine").css('display', 'block');
