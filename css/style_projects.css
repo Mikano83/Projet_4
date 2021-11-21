@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@700&family=Montserrat&family=Roboto+Slab&display=swap');
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -9,12 +10,39 @@ body {
   background: url(../img/project_template/background.jpg) 50% 50% repeat;
   background-size: cover;
   margin: 0;
-  justify-content:center;
-  align-items:center;
-  min-height:200vh;
+  justify-content: center;
+  align-items: center;
+  min-height: 200vh;
   background-color: black;
 }
 
+.transparent-black {
+  background-color: #000000a9 !important;
+}
+
+.transparent-white {
+  background-color: #ffffffa9 !important;
+}
+
+.anthracite {
+  background-color: #303030 !important;
+}
+
+.project-name {
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.parallax-container {
+  height: 300px;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-color: #303030;
+}
 
 .dropdown-1 {
   position: fixed;
@@ -23,141 +51,183 @@ body {
   z-index: 999;
 }
 
-.dropdown-1 li{
+.dropdown-1 li {
   background-color: black;
 }
 
+.section {
+  border-radius: 3rem;
+  box-shadow: inset 0px 0px 5px 0px #303030;
+}
 
 .Caroussel ul {
-  height:60vh;
-  width:20vh;
-  display:grid;
-  grid-template-rows: repeat(4,
-    1fr
-    2fr
-    1fr
-  );
-  overflow:hidden;
-
+  height: 60vh;
+  width: 20vh;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr 2fr 1fr);
+  overflow: hidden;
 }
 
 .Caroussel li {
-  width:100%;
-  height:100%;
-  grid-column:1/span 1;
+  width: 100%;
+  height: 100%;
+  grid-column: 1 / span 1;
 
-  --offsetX:50%;
+  --offsetX: 50%;
 }
 
 .Caroussel a {
-  display:block;
-  width:100%;
-  height:100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
-.Caroussel ul img{
-  display:block;
-  width:100%;
-  height:100%;
-  object-fit:cover;
+.Caroussel ul{
+  height: 25%;
+}
+
+.Caroussel ul img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .Caroussel li:first-of-type {
-  grid-row:1/span 4;
-  /* total=5fr */clip-path:polygon(100% calc(20% * -1), 0 calc(20%), 0 100%, 100% calc(20%*3));
+  grid-row: 1 / span 4;
+  /* total=5fr */
+  clip-path: polygon(
+    100% calc(20% * -1),
+    0 calc(20%),
+    0 100%,
+    100% calc(20% * 3)
+  );
 }
 
 .Caroussel li:nth-of-type(2) {
-  grid-row:3/span 5;
-  /* total=6fr */clip-path:polygon(100% 0, 0 calc(16.6%*2), 0 100%, 100% calc(16.6%*4));
+  grid-row: 3 / span 5;
+  /* total=6fr */
+  clip-path: polygon(100% 0, 0 calc(16.6% * 2), 0 100%, 100% calc(16.6% * 4));
 }
 
 .Caroussel li:nth-of-type(3) {
-  grid-row:6/span 5;
-  /* total=6fr */clip-path:polygon(100% 0, 0 calc(16.6%*2), 0 100%, 100% calc(16.6%*4));
+  grid-row: 6 / span 5;
+  /* total=6fr */
+  clip-path: polygon(100% 0, 0 calc(16.6% * 2), 0 100%, 100% calc(16.6% * 4));
 }
 
 .Caroussel li:last-of-type {
-  grid-row:-5/span 4;
-  /* total=5fr */clip-path:polygon(100% 0, 0 calc(20%*2), 0 calc(20%*6), 100% calc(20%*4))
+  grid-row: -5 / span 4;
+  /* total=5fr */
+  clip-path: polygon(
+    100% 0,
+    0 calc(20% * 2),
+    0 calc(20% * 6),
+    100% calc(20% * 4)
+  );
 }
-
-
-
 
 /* animation */
 @keyframes o {
-  from {transform:translate(0);}
+  from {
+    transform: translate(0);
+  }
 }
 
 li:nth-of-type(odd) a {
-  transform:translate(var(--offsetX), calc(var(--offsetX) * 0.166 * -2));
-  animation:o 2s;
+  transform: translate(var(--offsetX), calc(var(--offsetX) * 0.166 * -2));
+  animation: o 2s;
 }
 
 li:nth-of-type(even) a {
-  transform:translate(calc(var(--offsetX)*-1), calc(var(--offsetX) * 0.166 * 2));
-  animation:o 2s;
+  transform: translate(
+    calc(var(--offsetX) * -1),
+    calc(var(--offsetX) * 0.166 * 2)
+  );
+  animation: o 2s;
 }
 
 /* first and last hv diff slope; first=last=2/5fr regular=2/6fr; */
 
 li:first-of-type a {
-  transform:translate(var(--offsetX), calc(var(--offsetX) * 0.200 * -2));
+  transform: translate(var(--offsetX), calc(var(--offsetX) * 0.2 * -2));
 }
 
 li:last-of-type a {
-  transform:translate(calc(var(--offsetX) * -1), calc(var(--offsetX) * 0.200 * 2));
+  transform: translate(
+    calc(var(--offsetX) * -1),
+    calc(var(--offsetX) * 0.2 * 2)
+  );
 }
 
-ul img{
-  animation:blr 2s;
-  filter:blur(10px);
-} @keyframes blr {
-  from {filter:blur(0)}
+ul img {
+  animation: blr 2s;
+  filter: blur(10px);
 }
-
-
-
+@keyframes blr {
+  from {
+    filter: blur(0);
+  }
+}
 
 /* hover & vfx */
 li {
-  transition:opacity 0.3s;
+  transition: opacity 0.3s;
 }
 li a {
-  transition:all 0.15s;
+  transition: all 0.15s;
 }
 .Caroussel li:hover a {
-  transition:transform 0.3s;
-  transform:translate(0);
+  transition: transform 0.3s;
+  transform: translate(0);
 }
 
 .Caroussel ul:hover li {
-  opacity:0.1;
+  opacity: 0.1;
 }
 .Caroussel ul:hover li:hover {
-  opacity:1;
-  transition:clip-path 0.4s 0.3s;
-  clip-path:polygon(100% 0, 0 0, 0 100%, 100% 100%);
-  z-index:10;
+  opacity: 1;
+  transition: clip-path 0.4s 0.3s;
+  clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+  z-index: 10;
 }
 
-ul img{
-  filter:blur(10px);
-  transition:filter 0.7s;
+ul img {
+  filter: blur(10px);
+  transition: filter 0.7s;
 }
 .Caroussel li:hover img {
-  filter:blur(0);
+  filter: blur(0);
 }
 
 h1 {
-  font-size: 6vw!important;
-  font-weight: 400;
-  text-shadow: 1px 1px black;
+  font-family: 'Roboto Slab', serif;
+  font-size: 3.5rem !important;
+  font-weight: bold;
+  color: #303030;
+  text-shadow: 0px 0px 5px #303030;
 }
 
-
-.np {
-  font-weight: 300;
-  text-shadow: 1px 1px black;
+/* ################ FOOTER ################ */
+footer{
+  box-shadow: inset 0px 0px 5px 0px #303030;
 }
+footer h2{
+  font-family: "Miriam Libre", sans-serif;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+footer .row{
+  margin: 1rem;
+}
+footer .about {
+  height: 100%;
+}
+footer .about p{
+  margin-top: 0;
+  padding: 0 10px 0 10px;
+}
+footer .thanks img{
+  width: 15vw;
+}
+/* ################ FOOTER ################ */

@@ -78,9 +78,12 @@ h1 {
     color: #303030 !important;
 }
 
+.rep-color{
+    background-color: #1689fc;
+}
 /* ################ COMMON ################ */
 /* ################ HEADER ################ */
-.game-name {
+.project-name {
     text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
         0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
         0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
@@ -128,11 +131,6 @@ h1 {
 }
 /* ################ NAVBAR ################ */
 /* ################# MAIN ################# */
-.container-padding {
-    padding-left: 5vw;
-    padding-right: 5vw;
-}
-
 /* ############# QUESACO ############# */
 .quesaco-padding {
     padding-left: 3vw;
@@ -173,6 +171,7 @@ h1 {
     justify-content: center;
     margin: 0.5vh;
     padding: 2vh;
+    box-shadow: 0px 0px 5px 0px #303030;
 }
 
 .quesaco .rep {
@@ -183,6 +182,7 @@ h1 {
     min-height: 7vh;
     margin: 0.5vh;
     padding: 2vh;
+    box-shadow: 0px 0px 5px 0px #303030;
 }
 
 .quesaco .btn-floating:hover {
@@ -191,13 +191,29 @@ h1 {
 
 /* ############# QUESACO ############# */
 /* ############# PROJETS ############# */
-.container-project {
+.container-projects {
     display: none;
     padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.projects {
+    padding: 2vh;
+    border-radius: 3rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 1rem;
+    margin: 0.5vh;
+}
+
+.projects h5{
+    text-shadow: 0px 0px 2px #303030;
 }
 
 .projects p {
     padding: 0;
+    text-shadow: 0px 0px 2px #303030;
 }
 
 .projects .row:hover p {
@@ -214,6 +230,10 @@ h1 {
     margin-bottom: 1vh;
     margin-right: 0;
     padding-right: 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    box-shadow: 0px 0px 10px 0px #303030;
 }
 
 .projects .row .text-title {
@@ -236,7 +256,8 @@ h1 {
     border-bottom-right-radius: 1rem;
     border-top-left-radius: 3rem;
     border-bottom-left-radius: 3rem;
-    margin-left: 10%
+    margin-left: 10%;
+    box-shadow: 0px 0px 15px 0px #303030;
 }
 
 .projects .right-project {
@@ -245,6 +266,7 @@ h1 {
     border-top-right-radius: 3rem;
     border-bottom-right-radius: 3rem;
     margin-right: 10%;
+    box-shadow: 0px 0px 15px 0px #303030;
 }
 
 .projects .left-border {
@@ -261,7 +283,7 @@ h1 {
 /* ############## MODAL ############## */
 .modal {
     background-color: #303030  !important;
-    overflow: hidden !important;
+    /* overflow: hidden !important; */
     max-height: 76% !important;
     box-shadow: inset 0px 0px 50px -10px #1689fc56, 0px 0px 25px 0px #1689fc56!important;
     border-style: solid;
@@ -464,6 +486,29 @@ h1 {
 
 /* ############## MODAL ############## */
 /* ################# MAIN ################# */
+/* ################ FOOTER ################ */
+footer{
+    box-shadow: inset 0px 0px 5px 0px #303030;
+}
+footer h2{
+    font-family: "Miriam Libre", sans-serif;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+footer .row{
+    margin: 1rem;
+}
+footer .about {
+    height: 100%;
+}
+footer .about p{
+    margin-top: 0;
+    padding: 0 10px 0 10px;
+}
+footer .thanks img{
+    width: 15vw;
+}
+/* ################ FOOTER ################ */
 .rick {
     width: 100%;
     height: 100%;
