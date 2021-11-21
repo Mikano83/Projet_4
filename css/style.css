@@ -210,7 +210,7 @@ h1 {
   display: block;
   white-space: normal;
   overflow: auto;
-  text-overflow: auto;
+  /* text-overflow: auto; */
 }
 
 .projects img {
@@ -233,7 +233,7 @@ h1 {
 
 .projects .row .right-text {
   padding-left: 2vw;
-  padding-right: 4vw;
+  padding-right: 1vw;
 }
 
 .projects .project {
@@ -271,7 +271,7 @@ h1 {
 .modal-content .card {
   position: relative;
   width: 320px;
-  height: 450px;
+  height: 25rem;
   background: #232323;
   border-radius: 20px;
   overflow: hidden;
@@ -397,9 +397,10 @@ h1 {
 
 #custom-modal-footer {
   background-color: #4141418c !important;
-  height: 30vh;
+  height: auto;
   display: none;
   box-shadow: inset 0px 5px 10px 1px #303030;
+  margin-bottom: 0;
 }
 
 .modal-footer label {
@@ -407,6 +408,7 @@ h1 {
 }
 
 .modal-footer .input-field {
+  margin-bottom: 0;
   border-style: solid;
   border-width: 2px;
   border-color: #303030;
