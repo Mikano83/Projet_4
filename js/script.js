@@ -1,10 +1,6 @@
 var upsidedown = 0;
 
 $(document).ready(function () {
-  // $(".qst").throwable({
-  //   gravity: {x:0,y:1},
-  //   shape:"circle",
-  // });
   $('.slider').slider({
     interval: 4500,
     indicators: false,
@@ -14,18 +10,20 @@ $(document).ready(function () {
   $('.modal').modal();
   $('.parallax').parallax();
   $('.dropdown-trigger').dropdown();
-  $('#expand_contact').on('click',function () {
+  $('#expand_contact').on('click', function () {
     $('#custom-modal-footer').slideToggle('slow');
-    if (upsidedown == 0){
-    $("#expand_contact_btn").css('transform', 'rotate3d(1, 0, 0, 180deg)');
-    upsidedown = 1;
+    if (upsidedown == 0) {
+      $("#expand_contact_btn").css('transform', 'rotate3d(1, 0, 0, 180deg)');
+      upsidedown = 1;
     } else {
       $("#expand_contact_btn").css('transform', 'rotate3d(1, 0, 0, 0deg)');
       upsidedown = 0;
     }
   });
-  $('#test').on('click',function () {
+  $('#proj').on('click', function () {
     $('#project').slideToggle();
+    count_btn_click = count_btn_click + 1;
+    rick();
   });
 });
 
@@ -41,15 +39,6 @@ var count_rick_rgb = 0;
 const audio_rick = new Audio("sound/rickroll.mp3");
 const audio_heaven = new Audio("sound/heaven.mp3");
 
-function projects() {
-  count_btn_click = count_btn_click + 1;
-  if ($("#project").is(':visible')) {
-    $("#project").css('display', 'none');
-  } else {
-    $("#project").css('display', 'block');
-  }
-  rick();
-}
 /*################# EASTER EGG #################*/
 function rick() {
   if (count_btn_click == 5) {
