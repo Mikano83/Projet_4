@@ -24,21 +24,21 @@
           <img class="" src="img/home_template/slider1.png">
           <div class="caption center-align">
             <h2 class="project-name montserrat">Projet 1</h2>
-            <h5 class="light grey-text text-lighten-3 game-description miriam">Petit descriptif projet 1.</h5>
+            <h5 class="light grey-text text-lighten-3 project-description  miriam">Petit descriptif projet 1.</h5>
           </div>
         </li>
         <li>
           <img src="img/home_template/slider2.jpg">
           <div class="caption left-align">
             <h2 class="project-name montserrat">Projet 2</h2>
-            <h5 class="light grey-text text-lighten-3 game-description miriam">Petit descriptif projet 2.</h5>
+            <h5 class="light grey-text text-lighten-3 project-description  miriam">Petit descriptif projet 2.</h5>
           </div>
         </li>
         <li>
           <img src="img/home_template/slider3.jpg">
           <div class="caption right-align">
             <h2 class="project-name montserrat">Projet 3</h2>
-            <h5 class="light grey-text text-lighten-3 game-description miriam">Petit descriptif projet 3.</h5>
+            <h5 class="light grey-text text-lighten-3 project-description  miriam">Petit descriptif projet 3.</h5>
           </div>
         </li>
       </ul>
@@ -73,7 +73,7 @@
   </ul>
   <!-- ################ Responsive NavBar ################ -->
 
-  <!-- ################ Main ################ -->
+  <!-- ####################### Main ###################### -->
   <div id="modal1" class="modal rounded-corner-border">
     <div class="modal-content row center-block">
       <div class="card col s5">
@@ -111,7 +111,7 @@
     </div>
     <div class="row">
       <div class="s12 center-align">
-        <a class="expand-btn btn-floating transparent" id="expand_contact">
+        <a class="btn-floating transparent" id="expand_contact">
           <i id="expand_contact_btn" class="material-icons white-text">expand_more</i>
         </a>
       </div>
@@ -145,7 +145,7 @@
     </div>
   </div>
   <div class="container white white-text rounded-corner-border">
-    <!-- ################ Quesaco ################ -->
+    <!-- ###################### Quesaco #################### -->
     <div class="quesaco">
       <div class="quesaco-header center-align">
         <img class="circle" src="img/home_template/contact.jpg" alt="">
@@ -179,92 +179,97 @@
             Tiens, en voilà quelques-uns
           </p>
         </div>
-        <div class="row">
+        <div class="row remove-margin">
           <p class="rep-btn rep flow-text col valign-wrapper">
-            <a href="#project" class="btn-floating transparent-white pulse ">
-              <i class="material-icons" onclick="projects()">
+            <a class="btn-floating transparent-white pulse ">
+              <i class="material-icons" id="test">
                 attachment
               </i>
             </a>
           </p>
         </div>
+        <div class="row">
+          <!-- ##################### Projets ##################### -->
+          <div id="project" class="projects rep col s11" id="expand_projects">
+            <!-- ##################### Projet 1 #################### -->
+            <a href="project_template.html">
+              <div id="projet1" class="row transparent-white project valign-wrapper">
+                <div class="col s5 m5 l8">
+                  <img class="rounded-corner-image valign-wrapper" src="img/home_template/slider1.png" alt="">
+                </div>
+                <div class="col s7 m7 l4 left-border">
+                  <h5 class="left-align text-title">
+                    Projet 1
+                  </h5>
+                  <p class="right-text truncate">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quaerat deleniti officiis
+                    voluptate
+                    eaque reiciendis numquam aliquam saepe culpa amet corporis dignissimos recusandae ipsa, beatae a ut
+                    odit
+                    tempore laboriosam.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <!-- ##################### Projet 1 #################### -->
+            <!-- ##################### Projet 2 #################### -->
+            <a href="project_template.html">
+              <div id="projet2" class="row transparent-white project valign-wrapper">
+                <div class="col s5 m5 l8">
+                  <img class="rounded-corner-image valign-wrapper" src="img/home_template/slider2.jpg" alt="">
+                </div>
+                <div class="col s7 m7 l4 left-border">
+                  <h5 class="left-align text-title">
+                    Projet 1
+                  </h5>
+                  <p class="right-text truncate">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quaerat deleniti officiis
+                    voluptate
+                    eaque reiciendis numquam aliquam saepe culpa amet corporis dignissimos recusandae ipsa, beatae a ut
+                    odit
+                    tempore laboriosam.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <!-- ##################### Projet 2 #################### -->
+            <!-- ##################### Projet 3 #################### -->
+            <a href="project_template.html">
+              <div id="projet3" class="row transparent-white project valign-wrapper">
+                <div class="col s5 m5 l8">
+                  <img class="rounded-corner-image valign-wrapper" src="img/home_template/slider3.jpg" alt="">
+                </div>
+                <div class="col s7 m7 l4 left-border">
+                  <h5 class="left-align text-title">
+                    Projet 3
+                  </h5>
+                  <p class="right-text truncate">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quaerat deleniti officiis
+                    voluptate
+                    eaque reiciendis numquam aliquam saepe culpa amet corporis dignissimos recusandae ipsa, beatae a ut
+                    odit
+                    tempore laboriosam.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <!-- ##################### Projet 3 #################### -->
+          </div>
+          <!-- ##################### Projets ##################### -->
+        </div>
       </div>
     </div>
     <!-- ################ Quesaco ################ -->
   </div>
-  <div id="project" class="container container-projects white white-text rounded-corner-border">
-    <!-- ################ Projets ################ -->
-    <div class="projects rep-color" id="expand_projects">
-      <!-- ################ Projet 1 ################ -->
-      <a href="project_template.html">
-        <div id="projet1" class="row transparent-white right-project valign-wrapper">
-          <div class="col s5 m5 l8">
-            <img class="rounded-corner-image valign-wrapper" src="img/home_template/slider1.png" alt="">
-          </div>
-          <div class="col s7 m7 l4 left-border">
-            <h5 class="right-align text-title">
-              Projet 1
-            </h5>
-            <p class="right-text truncate">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quaerat deleniti officiis voluptate
-              eaque reiciendis numquam aliquam saepe culpa amet corporis dignissimos recusandae ipsa, beatae a ut odit
-              tempore laboriosam.
-            </p>
-          </div>
-        </div>
-      </a>
-      <!-- ################ Projet 1 ################ -->
-      <!-- ################ Projet 2 ################ -->
-      <a href="project_template.html">
-        <div id="projet2" class="row transparent-white right-project valign-wrapper">
-          <div class="col s7 m7 l4 right-border">
-            <h5 class="left-align text-title">
-              Projet 2
-            </h5>
-            <p class="right-text valign-wrapper truncate">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quaerat deleniti officiis voluptate
-              eaque reiciendis numquam aliquam saepe culpa amet corporis dignissimos recusandae ipsa, beatae a ut odit
-              tempore laboriosam.
-            </p>
-          </div>
-          <div class="col s5 m5 l8 right-align">
-            <img class="rounded-corner-image valign-wrapper" src="img/home_template/slider2.jpg" alt="">
-          </div>
-        </div>
-      </a>
-      <!-- ################ Projet 2 ################ -->
-      <!-- ################ Projet 3 ################ -->
-      <a href="project_template.html">
-        <div id="projet3" class="row transparent-white right-project valign-wrapper">
-          <div class="col s5 m5 l8">
-            <img class="rounded-corner-image valign-wrapper" src="img/home_template/slider3.jpg" alt="">
-          </div>
-          <div class="col s7 m7 l4 left-border">
-            <h5 class="left-align text-title">
-              Projet 3
-            </h5>
-            <p class="right-text truncate">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quaerat deleniti officiis voluptate
-              eaque reiciendis numquam aliquam saepe culpa amet corporis dignissimos recusandae ipsa, beatae a ut odit
-              tempore laboriosam.
-            </p>
-          </div>
-        </div>
-      </a>
-      <!-- ################ Projet 3 ################ -->
-    </div>
-    <!-- ################ Projets ################ -->
-  </div>
-  </div>
-  <!-- ################ Main ################ -->
+  <!-- ####################### Main ###################### -->
   <footer class="row transparent-white">
     <div class="thanks col s4">
       <div class="row center-align">
         <h2 class="col s12">Thanks</h2>
-        <a href="https://gamingcampus.fr/" rel="nofollow" target="_blank" class="col s12 l3 offset-l3">
+        <a href="https://gamingcampus.fr/" rel="nofollow" target="_blank" class="col s12 m4 offset-m4 l3 offset-l3">
           <img class="responsive-img" src="img/thanks_gcampus.png" alt="">
         </a>
-        <a href="https://snowball.gg/" rel="nofollow" target="_blank" class="col s12 l3">
+        <a href="https://snowball.gg/" rel="nofollow" target="_blank" class="col s12 m4 offset-m4 l3">
           <img class="responsive-img" src="img/thanks_snowball.png" alt="">
         </a>
       </div>
@@ -274,9 +279,11 @@
       <div class="row center-align">
         <h2 class="col s12">About</h2>
         <p class="left-align">Portfolio réalisé dans le cadre d'un projet au Gaming Campus. Il regroupe trois projets
-          issues de cette école ou non, qu'ils aient été faits en coopération par nous, DA SILVA Théo et MELLANO Kim, ou non.
+          issues de cette école ou non, qu'ils aient été faits en coopération par nous, DA SILVA Théo et MELLANO Kim, ou
+          non.
           <br>Page template d'accueil faite par DA SILVA Théo,
-          <br>Page template de projet faite par MELLANO Kim.</p>
+          <br>Page template de projet faite par MELLANO Kim.
+        </p>
       </div>
     </div>
   </footer>

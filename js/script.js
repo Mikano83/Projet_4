@@ -24,6 +24,9 @@ $(document).ready(function () {
       upsidedown = 0;
     }
   });
+  $('#test').on('click',function () {
+    $('#project').slideToggle();
+  });
 });
 
 var passphrase = "";
